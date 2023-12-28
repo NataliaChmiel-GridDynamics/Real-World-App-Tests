@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const { testUser, nonExistingUser } = require('../../data/users');
+const { expect } = require('@playwright/test');
+const { testUser } = require('../../data/users');
 const { authroizedApiTest } = require('./utils');
 
 authroizedApiTest('should get users list', async ({ authroizedRequest }) => {

@@ -1,6 +1,4 @@
-const { test, expect } = require('@playwright/test');
-const { testUser } = require('../../data/users');
-const { loggedInUserApiContext } = require('../../utilities/apiUtilities');
+const { expect } = require('@playwright/test');
 const { authroizedApiTest } = require('./utils');
 
 authroizedApiTest('should delete bank account', async ({ authroizedRequest }) => {

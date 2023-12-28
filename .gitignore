@@ -28,3 +28,7 @@ node_modules
 # Desktop Service Store
 .DS_Store
 
+# Folders
+.vscode
+
+

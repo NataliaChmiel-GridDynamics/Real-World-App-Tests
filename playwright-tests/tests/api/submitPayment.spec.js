@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { expect } = require('@playwright/test');
 const { authroizedApiTest } = require('./utils');
 
 authroizedApiTest('should submit payment', async ({ authroizedRequest }) => {
