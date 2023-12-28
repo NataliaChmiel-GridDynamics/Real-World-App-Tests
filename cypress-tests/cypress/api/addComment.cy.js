@@ -14,8 +14,8 @@ describe('Add comment to transaction', () => {
   it.only('should add comment to transaction', () => {
     cy.request({
       method: 'POST',
-      url: '/comments/0Hl6LF0Im',
-      body: { transactionId: '0Hl6LF0Im', content: 'comment' },
+      url: '/comments/183VHWyuQMS',
+      body: { transactionId: '183VHWyuQMS', content: 'comment' },
     }).then(response => {
       expect(response.status).to.eq(200);
     });

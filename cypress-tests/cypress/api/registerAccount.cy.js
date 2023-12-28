@@ -1,5 +1,4 @@
 describe('Register account', () => {
-
   it.only('should register account', () => {
     cy.request({
       method: 'POST',

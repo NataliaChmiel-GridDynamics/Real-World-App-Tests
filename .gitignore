@@ -24,3 +24,7 @@ node_modules
 ## Cypress
 **/screenshots
 **/mochawesome-report
+
+# Desktop Service Store
+.DS_Store
+
