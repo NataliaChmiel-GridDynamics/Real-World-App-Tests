@@ -19,7 +19,7 @@ jobs:
           node-version: 14.x
       - name: install
         run: |
-          yarn install
+          yarn install --ignore-engines
       - name: test
         run: |
           yarn playwright:api
