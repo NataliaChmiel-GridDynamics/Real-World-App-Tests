@@ -2,11 +2,11 @@ const { expect } = require('@playwright/test');
 const { authroizedApiTest } = require('./utils');
 
 authroizedApiTest('should add comment to transaction', async ({ authroizedRequest }) => {
-  const deleteRequest = await authroizedRequest.post('/comments/0Hl6LF0Im', {
+  const addComment = await authroizedRequest.post('/comments/183VHWyuQMS', {
     data: {
-      transactionId: '0Hl6LF0Im',
+      transactionId: '183VHWyuQMS',
       content: 'comment',
     },
   });
-  expect(deleteRequest.ok()).toBeTruthy();
+  expect(addComment.ok()).toBeTruthy();
 });
